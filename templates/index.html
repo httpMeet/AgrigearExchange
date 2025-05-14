@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <title>AgriGear Exchange</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CLato%7CKalam:300,400,700">
+    <link rel="stylesheet" href="/static/landing_page/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/landing_page/css/fonts.css">
+    <link rel="stylesheet" href="/static/landing_page/css/style.css">
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="cssload-container"></div>
+        <div class="cssload-speeding-wheel"></div>
+      </div>
+    </div>
+    <div class="page">
+      <!-- Page Header-->
+      <header class="section page-header header-creative-wrap">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-creative rd-navbar-creative-2" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="100px" data-xl-stick-up-offset="112px" data-xxl-stick-up-offset="132px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+        
+            <div class="rd-navbar-aside-outer">
+              <div class="rd-navbar-aside">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!-- RD Navbar Toggle-->
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <!-- RD Navbar Brand-->
+                  <div class="rd-navbar-brand"><a class="brand" href="index.html"><img class="brand-logo-dark" src="/static/landing_page/images/logo-default-314x100.png" alt="" width="157" height="50"/><img class="brand-logo-light" src="/static/landing_page/images/logo-inverse-314x100.png" alt="" width="157" height="50"/></a>
+                  </div>
+                </div>
+                <div class="rd-navbar-collapse">
+                  <ul class="contacts-classic">
+                    <li><span class="contacts-classic-title">Call us:</span> <a href="tel:#">+91 090xxxxxx</a>
+                    </li>
+                    <li><a href="mailto:#">info@agrigear.org</a></li>
+                  </ul><a class="rd-navbar-basket rd-navbar-basket-mobile fl-bigmug-line-shopping202" href="cart-page.html"><span>2</span></a>
+                </div>
+                <div class="rd-navbar-aside-element">
+                  <!-- RD Navbar Search-->
+                  <div class="rd-navbar-search rd-navbar-search-2">
+                    <button class="rd-navbar-search-toggle rd-navbar-fixed-element-3" data-rd-navbar-toggle=".rd-navbar-search"><span></span></button>
+                    <form class="rd-search" action="search-results.html" data-search-live="rd-search-results-live" method="GET">
+                      <div class="form-wrap">
+                        <label class="form-label" for="rd-navbar-search-form-input">Search...</label>
+                        <input class="rd-navbar-search-form-input form-input" id="rd-navbar-search-form-input" type="text" name="s" autocomplete="off"/>
+                        <div class="rd-search-results-live" id="rd-search-results-live"></div>
+                        <button class="rd-search-form-submit fl-bigmug-line-search74" type="submit"></button>
+                      </div>
+                    </form>
+                  </div>
+          
+                 
+                </div>
+              </div>
+            </div>
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <div class="rd-navbar-nav-wrap">
+                  <!-- RD Navbar Nav-->
+                  <ul class="rd-navbar-nav">
+                    <li class="rd-nav-item active"><a class="rd-nav-link" href="{% url 'landing_page' %}">Home</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'grid_shop' %}">View Equipment</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="#ourteam">team</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="#">Account</a>
+                      <!-- RD Navbar Megamenu-->
+                      <ul class="rd-menu rd-navbar-dropdown rd-navbar-open-left">
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="{% url 'login' %}">Log in</a></li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="{% url 'register' %}">sign up</a></li>
+                       
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- Swiper-->
+      <section class="section swiper-container swiper-slider swiper-slider-4" data-loop="true" data-autoplay="false">
+        <div class="swiper-wrapper text-center text-sm-start context-dark">
+          <div class="swiper-slide swiper-slide-1" data-slide-bg="/static/landing_page/images/slide-1.jpg">
+            <div class="swiper-slide-caption section-md text-sm-start">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-6 col-md-5 col-xl-6">
+                    <h2 class="swiper-title-1" data-caption-animate="fadeInLeft" data-caption-delay="100">Welcome to <br> AgriGear Exchange
+                    </h2>
+                    <h5 class="swiper-title-2 text-width-small" data-caption-animate="fadeInLeft" data-caption-delay="250">Our website offers a Farm Equipment Rental Marketplace .</h5>
+                    <div class="button-wrap" data-caption-animate="fadeInLeft" data-caption-delay="400"><a class="button button-lg button-secondary-2 button-zakaria" href="{% url 'login' %}">&nbsp; Log-in</a></div>
+                    <div class="button-wrap" data-caption-animate="fadeInLeft" data-caption-delay="400"><a class="button button-lg button-secondary-2 button-zakaria" href="{% url 'register' %}">Sign-up</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide-1" data-slide-bg="/static/landing_page/images/slide-2.jpg">
+            <div class="swiper-slide-caption section-md text-sm-start">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-6 col-md-5 col-xl-6">
+                    <h2 class="swiper-title-1" data-caption-animate="fadeInLeft" data-caption-delay="100">High-quality <br>service
+                    </h2>
+                    <h5 class="swiper-title-2 text-width-small" data-caption-animate="fadeInLeft" data-caption-delay="250">On our website, you can experience the best customer service and support.</h5>
+                    <div class="button-wrap" data-caption-animate="fadeInLeft" data-caption-delay="400"><a class="button button-lg button-secondary-2 button-zakaria" href="{% url 'login' %}">&nbsp; Log-in</a></div>
+                    <div class="button-wrap" data-caption-animate="fadeInLeft" data-caption-delay="400"><a class="button button-lg button-secondary-2 button-zakaria" href="{% url 'register' %}">Sign-up</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide-1" data-slide-bg="/static/landing_page/images/slide-3.jpg">
+            <div class="swiper-slide-caption section-md text-sm-start">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-6 col-md-5 col-xl-6">
+                    <h2 class="swiper-title-1" data-caption-animate="fadeInLeft" data-caption-delay="100">Wide Range <br>of Equipments
+                    </h2>
+                    <h5 class="swiper-title-2 text-width-small" data-caption-animate="fadeInLeft" data-caption-delay="250">On our website, you can find all kinds of </h5>
+                    <div class="button-wrap" data-caption-animate="fadeInLeft" data-caption-delay="400"><a class="button button-lg button-secondary-2 button-zakaria" href="{% url 'login' %}">&nbsp; Log-in</a></div>
+                    <div class="button-wrap" data-caption-animate="fadeInLeft" data-caption-delay="400"><a class="button button-lg button-secondary-2 button-zakaria" href="{% url 'register' %}">Sign-up</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Swiper Pagination-->
+        <div class="swiper-pagination"></div>
+        <!-- Swiper Navigation-->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </section>
+
+      <!-- Services-->
+      <section class="section section-xxl bg-gray-20">
+        <div class="container">
+          <div class="row row-xl row-30 row-md-40 row-lg-50 align-items-center">
+            <div class="col-md-5 col-xl-4">
+              <div class="row row-30 row-md-40 row-lg-50 bordered-2">
+                <div class="col-sm-6 col-md-12">
+                  <article class="box-icon-classic text-md-end wow fadeInLeft">
+                    <div class="unit unit-spacing-md flex-column flex-lg-row-reverse">
+                      <div class="unit-left"><span class="box-icon-classic-count">01</span></div>
+                      <div class="unit-body">
+                        <h4 class="box-icon-classic-title"><a href="#">Tractors</a></h4>
+                        <p class="box-icon-classic-text">Get the job done efficiently with our range of high-performance tractors available for rent. Perfect for various farming tasks, our tractors offer reliability and power for your agricultural needs.</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-sm-6 col-md-12">
+                  <article class="box-icon-classic text-md-end wow fadeInLeft" data-wow-delay=".1s">
+                    <div class="unit unit-spacing-md flex-column flex-lg-row-reverse">
+                      <div class="unit-left"><span class="box-icon-classic-count">03</span></div>
+                      <div class="unit-body">
+                        <h4 class="box-icon-classic-title"><a href="#"> Plows</a></h4>
+                        <p class="box-icon-classic-text">Transform your fields with ease using our versatile plows. Available for rent, these plows are designed to handle different soil types and ensure a well-prepped field for planting.</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-xl-4 d-none d-md-block wow fadeScale"><img src="/static/landing_page/images/index-1-440x455.png" alt="" width="440" height="455"/>
+            </div>
+            <div class="col-md-5 col-xl-4">
+              <div class="row row-30 row-md-40 row-lg-50 bordered-2">
+                <div class="col-sm-6 col-md-12">
+                  <article class="box-icon-classic wow fadeInRigth">
+                    <div class="unit unit-spacing-md flex-column flex-lg-row">
+                      <div class="unit-left"><span class="box-icon-classic-count">02</span></div>
+                      <div class="unit-body">
+                        <h4 class="box-icon-classic-title"><a href="#">Harvesters</a></h4>
+                        <p class="box-icon-classic-text">Streamline your harvest with our top-quality harvesters. Rent from us to benefit from reliable, efficient equipment that makes gathering crops quicker and more effective.</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-sm-6 col-md-12">
+                  <article class="box-icon-classic wow fadeInRight" data-wow-delay=".1s">
+                    <div class="unit unit-spacing-md flex-column flex-lg-row">
+                      <div class="unit-left"><span class="box-icon-classic-count">04</span></div>
+                      <div class="unit-body">
+                        <h4 class="box-icon-classic-title"><a href="#">Cultivators</a></h4>
+                        <p class="box-icon-classic-text">Prepare your soil for planting with our efficient cultivators. Available for rent, our cultivators are built to break up soil and manage weeds, ensuring optimal growing conditions for your crops.</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- New Flavors-->
+      <section class="section section-xxl bg-default">
+        <div class="container">
+          <h2 class="text-transform-capitalize wow fadeScale">Equipments</h2>
+          <div class="row row-lg row-30 row-lg-50">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <!-- Product-->
+              <article class="product wow fadeInRight">
+                <div class="product-body">
+                  <div class="product-figure"><img src="/static/landing_page/images/tractor.jpg" alt="" width="109" height="175"/>
+                  </div>
+                  <h5 class="product-title"><a href="single-product.html">Tractor</a></h5>
+                  <div class="product-price-wrap">
+                    
+                    <div class="product-price">₹23.00</div>
+                  </div>
+                </div>
+                <div class="product-button-wrap">
+                  <div class="product-button"><a class="button button-secondary button-zakaria fl-bigmug-line-search74" href="single-product.html"></a></div>
+                  
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <!-- Product-->
+              <article class="product wow fadeInRight">
+                <div class="product-body">
+                  <div class="product-figure"><img src="/static/landing_page/images/tractor.jpg" alt="" width="109" height="175"/>
+                  </div>
+                  <h5 class="product-title"><a href="single-product.html">Tractor</a></h5>
+                  <div class="product-price-wrap">
+                    
+                    <div class="product-price">₹23.00</div>
+                  </div>
+                </div>
+                <div class="product-button-wrap">
+                  <div class="product-button"><a class="button button-secondary button-zakaria fl-bigmug-line-search74" href="single-product.html"></a></div>
+                  
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <!-- Product-->
+              <article class="product wow fadeInRight">
+                <div class="product-body">
+                  <div class="product-figure"><img src="/static/landing_page/images/tractor.jpg" alt="" width="109" height="175"/>
+                  </div>
+                  <h5 class="product-title"><a href="single-product.html">Tractor</a></h5>
+                  <div class="product-price-wrap">
+                    
+                    <div class="product-price">₹23.00</div>
+                  </div>
+                </div>
+                <div class="product-button-wrap">
+                  <div class="product-button"><a class="button button-secondary button-zakaria fl-bigmug-line-search74" href="single-product.html"></a></div>
+                  
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <!-- Product-->
+              <article class="product wow fadeInRight">
+                <div class="product-body">
+                  <div class="product-figure"><img src="/static/landing_page/images/tractor.jpg" alt="" width="109" height="175"/>
+                  </div>
+                  <h5 class="product-title"><a href="single-product.html">Tractor</a></h5>
+                  <div class="product-price-wrap">
+                    
+                    <div class="product-price">₹23.00</div>
+                  </div>
+                </div>
+                <div class="product-button-wrap">
+                  <div class="product-button"><a class="button button-secondary button-zakaria fl-bigmug-line-search74" href="single-product.html"></a></div>
+                  
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <!-- Product-->
+              <article class="product wow fadeInRight">
+                <div class="product-body">
+                  <div class="product-figure"><img src="/static/landing_page/images/tractor.jpg" alt="" width="109" height="175"/>
+                  </div>
+                  <h5 class="product-title"><a href="single-product.html">Tractor</a></h5>
+                  <div class="product-price-wrap">
+                    
+                    <div class="product-price">₹23.00</div>
+                  </div>
+                </div>
+                <div class="product-button-wrap">
+                  <div class="product-button"><a class="button button-secondary button-zakaria fl-bigmug-line-search74" href="single-product.html"></a></div>
+                  
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <!-- Product-->
+              <article class="product wow fadeInRight">
+                <div class="product-body">
+                  <div class="product-figure"><img src="/static/landing_page/images/tractor.jpg" alt="" width="109" height="175"/>
+                  </div>
+                  <h5 class="product-title"><a href="single-product.html">Tractor</a></h5>
+                  <div class="product-price-wrap">
+                    
+                    <div class="product-price">₹23.00</div>
+                  </div>
+                </div>
+                <div class="product-button-wrap">
+                  <div class="product-button"><a class="button button-secondary button-zakaria fl-bigmug-line-search74" href="single-product.html"></a></div>
+                  
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <!-- Product-->
+              <article class="product wow fadeInRight">
+                <div class="product-body">
+                  <div class="product-figure"><img src="/static/landing_page/images/tractor.jpg" alt="" width="109" height="175"/>
+                  </div>
+                  <h5 class="product-title"><a href="single-product.html">Tractor</a></h5>
+                  <div class="product-price-wrap">
+                    
+                    <div class="product-price">₹23.00</div>
+                  </div>
+                </div>
+                <div class="product-button-wrap">
+                  <div class="product-button"><a class="button button-secondary button-zakaria fl-bigmug-line-search74" href="single-product.html"></a></div>
+                  
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <!-- Product-->
+              <article class="product wow fadeInRight">
+                <div class="product-body">
+                  <div class="product-figure"><img src="/static/landing_page/images/tractor.jpg" alt="" width="109" height="175"/>
+                  </div>
+                  <h5 class="product-title"><a href="single-product.html">Tractor</a></h5>
+                  <div class="product-price-wrap">
+                    
+                    <div class="product-price">₹23.00</div>
+                  </div>
+                </div>
+                <div class="product-button-wrap">
+                  <div class="product-button"><a class="button button-secondary button-zakaria fl-bigmug-line-search74" href="single-product.html"></a></div>
+                  
+                </div>
+              </article>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- Counter Modern-->
+      <section class="section parallax-container" data-parallax-img="/static/landing_page/images/parallax-2.jpeg">
+        <div class="parallax-content section-xxl context-dark">
+          <div class="container">
+            <div class="row row-30 justify-content-center">
+              <div class="col-6 col-sm-3">
+                <div class="counter-modern">
+                  <h2 class="counter-modern-number"><span class="counter">245</span>
+                  </h2>
+                  <div class="counter-modern-decor"></div>
+                  <h5 class="counter-modern-title">Types of<br class="d-none d-sm-block">Equipment</h5>
+                </div>
+              </div>
+              <div class="col-6 col-sm-3">
+                <div class="counter-modern">
+                  <h2 class="counter-modern-number"><span class="counter">182</span>
+                  </h2>
+                  <div class="counter-modern-decor"></div>
+                  <h5 class="counter-modern-title">Flexible<br class="d-none d-sm-block">Rental Plans</h5>
+                </div>
+              </div>
+              <div class="col-6 col-sm-3">
+                <div class="counter-modern">
+                  <h2 class="counter-modern-number"><span class="counter">1267</span>
+                  </h2>
+                  <div class="counter-modern-decor"></div>
+                  <h5 class="counter-modern-title">Satisfied<br class="d-none d-sm-block"> clients</h5>
+                </div>
+              </div>
+              <div class="col-6 col-sm-3">
+                <div class="counter-modern">
+                  <h2 class="counter-modern-number"><span class="counter">47</span>
+                  </h2>
+                  <div class="counter-modern-decor"></div>
+                  <h5 class="counter-modern-title">Service Areas Across<br class="d-none d-sm-block">the Country</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Product and Clients-->
+      <section class="section section-xxl bg-default text-md-start">
+        <div class="container">
+          <div class="row row-30 row-md-60 row-lg-70 justify-content-center align-items-md-center">
+            <div class="col-sm-8 col-md-5 col-xl-6">
+              <div class="inset-xl-right-20">
+                <div class="product-wrap-1 bg-gray-20">
+                  <!-- Owl Carousel-->
+                  <div class="owl-carousel owl-style-5" data-items="1" data-margin="30" data-dots="true" data-autoplay="true">
+                    <!-- Jps is here, because images in psd was wrong-->
+                    <article class="product-creative">
+                      <div class="product-figure"><img src="/static/landing_page/images/product-big-1-470x324.jpeg" alt="" width="470" height="324"/>
+                      </div>
+                      <h4 class="product-creative-title"><a href="single-product.html">Plant Cutter</a></h4>
+                      <div class="product-creative-price-wrap">
+                   
+                        <div class="product-creative-price">₹240.00</div>
+                      </div>
+                    </article>
+                    <article class="product-creative">
+                      <div class="product-figure"><img src="/static/landing_page/images/product-big-2-470x324.jpeg" alt="" width="470" height="324"/>
+                      </div>
+                      <h4 class="product-creative-title"><a href="single-product.html">Fork</a></h4>
+                      <div class="product-creative-price-wrap">
+                      
+                        <div class="product-creative-price">₹280.00</div>
+                      </div>
+                    </article>
+                    <article class="product-creative">
+                      <div class="product-figure"><img src="/static/landing_page/images/product-big-3-470x324.jpeg" alt="" width="470" height="324"/>
+                      </div>
+                      <h4 class="product-creative-title"><a href="single-product.html">Shovel</a></h4>
+                      <div class="product-creative-price-wrap">
+                     
+                        <div class="product-creative-price">₹290.00</div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7 col-xl-6">
+              <h2 class="text-transform-capitalize wow fadeInRight">Why Choose Us</h2>
+              <!-- Bootstrap collapse-->
+              <div class="card-group-custom card-group-corporate" id="accordion1" role="tablist" aria-multiselectable="false">
+                <!-- Bootstrap card-->
+                <article class="card card-custom card-corporate wow fadeInRight" data-wow-delay=".1s">
+                  <div class="card-header" role="tab">
+                    <div class="card-title"><a id="accordion1-card-head-pshwyisk" data-bs-toggle="collapse" data-bs-parent="#accordion1" href="#accordion1-card-body-hencmgbe" aria-controls="accordion1-card-body-hencmgbe" aria-expanded="true" role="button">Wide Range of High-Quality Equipment
+                        <div class="card-arrow">
+                          <div class="icon"></div>
+                        </div></a></div>
+                  </div>
+                  <div class="collapse show" id="accordion1-card-body-hencmgbe" aria-labelledby="accordion1-card-head-pshwyisk" data-bs-parent="#accordion1" role="tabpanel">
+                    <div class="card-body">
+                      <p>At AgriGear Exchange, we offer a comprehensive selection of well-maintained and reliable farming tools and machinery. From tractors to harvesters, our inventory is designed to meet all your agricultural needs with top-notch quality and performance.</p>
+                    </div>
+                  </div>
+                </article>
+                <!-- Bootstrap card-->
+                <article class="card card-custom card-corporate wow fadeInRight" data-wow-delay=".2s">
+                  <div class="card-header" role="tab">
+                    <div class="card-title"><a class="collapsed" id="accordion1-card-head-qkbkksoc" data-bs-toggle="collapse" data-bs-parent="#accordion1" href="#accordion1-card-body-nbkmmuvb" aria-controls="accordion1-card-body-nbkmmuvb" aria-expanded="false" role="button"> Flexible Rental Options
+                        <div class="card-arrow">
+                          <div class="icon"></div>
+                        </div></a></div>
+                  </div>
+                  <div class="collapse" id="accordion1-card-body-nbkmmuvb" aria-labelledby="accordion1-card-head-qkbkksoc" data-bs-parent="#accordion1" role="tabpanel">
+                    <div class="card-body">
+                      <p>We understand that farming needs can vary, so we provide flexible rental terms to fit your schedule and budget. Whether you need equipment for a short-term project or a long-term use, our customizable rental plans ensure you get exactly what you need when you need it.</p>
+                    </div>
+                  </div>
+                </article>
+                <!-- Bootstrap card-->
+                <article class="card card-custom card-corporate wow fadeInRight" data-wow-delay=".3s">
+                  <div class="card-header" role="tab">
+                    <div class="card-title"><a class="collapsed" id="accordion1-card-head-jkwtepuw" data-bs-toggle="collapse" data-bs-parent="#accordion1" href="#accordion1-card-body-bpweewgt" aria-controls="accordion1-card-body-bpweewgt" aria-expanded="false" role="button">Expert Support and Service
+                        <div class="card-arrow">
+                          <div class="icon"></div>
+                        </div></a></div>
+                  </div>
+                  <div class="collapse" id="accordion1-card-body-bpweewgt" aria-labelledby="accordion1-card-head-jkwtepuw" data-bs-parent="#accordion1" role="tabpanel">
+                    <div class="card-body">
+                      <p>Our experienced team is dedicated to providing exceptional customer service. From helping you choose the right equipment to offering support throughout your rental period, we’re here to ensure a smooth and efficient experience for all your farming operations.</p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    
+
+
+      <!-- Subscribe to Our Newsletter-->
+      <section class="section parallax-container" data-parallax-img="/static/landing_page/images/parallax-2.jpeg">
+        <div class="parallax-content section-xxl context-dark text-md-left">
+          <div class="container">
+            <div class="row row-30 justify-content-center align-items-center align-items-md-end text-center text-lg-start">
+              <div class="col-lg-3">
+                <h3 class="text-spacing-100 wow fadeInLeft">Stay <span class="fw-light">connected</span>
+                </h3>
+                <p class="wow fadeInLeft" data-wow-delay=".1s">Subscribe to our newsletter</p>
+              </div>
+              <div class="col-lg-8 col-xl-9 inset-lg-bottom-10">
+                <!-- RD Mailform-->
+                <form class="rd-form rd-mailform rd-form-inline form-lg rd-form-text-center" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
+                  <div class="form-wrap wow fadeInUp">
+                    <input class="form-input" id="subscribe-form-0-email" type="email" name="email" data-constraints="@Email @Required"/>
+                    <label class="form-label" for="subscribe-form-0-email">Enter your e-mail address</label>
+                  </div>
+                  <div class="form-button wow fadeInRight">
+                    <button class="button button-zakaria button-secondary-2 button-lg button-secondary" type="submit">Subscribe</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Team-->
+      <section class="section section-xxl bg-default" id="ourteam">
+        <div class="container">
+          <h2 class="text-transform-capitalize wow fadeScale">Our Team</h2>
+          <!-- Owl Carousel-->
+          <div class="owl-carousel owl-style-9" data-items="1" data-sm-items="2" data-md-items="3" data-lg-items="4" data-margin="30" data-dots="true" data-mouse-drag="false">
+            <article class="team-modern box-sm wow slideInUp"><a class="team-modern-figure" href="#"><img src="/static/landing_page/images/user1.jpeg" alt="" width="270" height="227"/></a>
+              <h5 class="team-modern-name"><a href="#">vidit shah</a></h5>
+          
+            </article>
+            <article class="team-modern box-sm wow slideInUp" data-wow-delay=".1s"><a class="team-modern-figure" href="#"><img src="/static/landing_page/images/user1.jpeg" alt="" width="270" height="227"/></a>
+              <h5 class="team-modern-name"><a href="#">Prakash S.</a></h5>
+             
+            </article>
+            <article class="team-modern box-sm wow slideInUp" data-wow-delay=".2s"><a class="team-modern-figure" href="#"><img src="/static/landing_page/images/user1.jpeg" alt="" width="270" height="227"/></a>
+              <h5 class="team-modern-name"><a href="#">Meet Gandhi</a></h5>
+             
+            </article>
+            <article class="team-modern box-sm wow slideInUp" data-wow-delay=".3s"><a class="team-modern-figure" href="#"><img src="/static/landing_page/images/user1.jpeg" alt="" width="270" height="227"/></a>
+              <h5 class="team-modern-name"><a href="#">Dhairya Nayak</a></h5>
+     
+             
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Clients-->
+     
+
+      <!-- Section Clients-->
+     
+
+      <!-- Page Footer-->
+      <footer class="section footer-modern footer-modern-2">
+        <div class="footer-modern-body section-xl context-dark">
+          <div class="container">
+            <div class="row row-40 row-md-50 justify-content-xl-between">
+              
+              <div class="col-sm-6 col-md-7 col-lg-5 wow fadeInRight" data-wow-delay=".1s">
+                <h5 class="footer-modern-title">Quick Links</h5>
+                <ul class="footer-modern-list footer-modern-list-2 d-sm-inline-block d-md-block">
+                  <li><a href="our-team.html">Our Team</a></li>
+                  <li><a href="{% url 'grid_shop' %}">New Equipments</a></li>
+                  <li><a href="#">Top Sellers</a></li>
+                  <li><a href="about-us.html">About Us</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="contact-us.html">Contact Us</a></li>
+                  
+                </ul>
+              </div>
+              <div class="col-sm-6 col-md-5 col-lg-4 col-xl-3 wow fadeInRight" data-wow-delay=".2s">
+                <h5 class="footer-modern-title">Get in touch</h5>
+                <ul class="contacts-creative">
+                  <li>
+                    <div class="unit unit-spacing-sm flex-column flex-md-row">
+                      <div class="unit-left"><span class="icon mdi mdi-map-marker"></span></div>
+                      <div class="unit-body"><a href="#">523 Sylvan Ave, 5th Floor<br/>, Ahmedabad </a></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="unit unit-spacing-sm flex-column flex-md-row">
+                      <div class="unit-left"><span class="icon mdi mdi-phone"></span></div>
+                      <div class="unit-body"><a href="tel:#">+91 90xxxxxx</a></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="unit unit-spacing-sm flex-column flex-md-row">
+                      <div class="unit-left"><span class="icon mdi mdi-email-outline"></span></div>
+                      <div class="unit-body"><a href="mailto:#">info@agriGear.org</a></div>
+                    </div>
+                  </li>
+                </ul>
+             
+              
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-modern-panel text-center">
+          <div class="container">
+            <p class="rights"><span>&copy;&nbsp; </span><span class="copyright-year"></span><span>&nbsp;</span><span>Unit</span><span>.&nbsp;</span><span>All Rights Reserved Code-Titans</span><span>.&nbsp;</span><a href="privacy-policy.html">Privacy Policy</a></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Panel Thumbnail-->
+    <!-- Template panel-->
+
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="/static/landing_page/js/core.min.js"></script>
+    <script src="/static/landing_page/js/script.js"></script>
+  <!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P9FT69" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P9FT69');</script><!-- End Google Tag Manager --></body>
+</html>

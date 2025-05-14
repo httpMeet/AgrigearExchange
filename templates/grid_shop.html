@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <title>Grid Shop</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="/static/landing_page/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CLato%7CKalam:300,400,700">
+    <link rel="stylesheet" href="/static/landing_page/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/landing_page/css/fonts.css">
+    <link rel="stylesheet" href="/static/landing_page/css/style2.css">
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="cssload-container"></div>
+        <div class="cssload-speeding-wheel"></div>
+      </div>
+    </div>
+    <div class="page">
+      <!--/ Page Header-->
+      <header class="section page-header header-creative-wrap">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-creative rd-navbar-creative-2" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="100px" data-xl-stick-up-offset="112px" data-xxl-stick-up-offset="132px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+          
+            <div class="rd-navbar-aside-outer">
+              <div class="rd-navbar-aside">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!-- RD Navbar Toggle-->
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <!-- RD Navbar Brand-->
+                  <div class="rd-navbar-brand"><a class="brand" href="{url 'landing_page'}"><img class="brand-logo-dark" src="/static/landing_page/images/logo-default-314x100.png" alt="" width="157" height="50"/><img class="brand-logo-light" src="/static/landing_page/images/logo-inverse-314x100.png" alt="" width="157" height="50"/></a>
+                  </div>
+                </div>
+                <div class="rd-navbar-collapse">
+                  <ul class="contacts-classic">
+                    <li><span class="contacts-classic-title">Call us:</span> <a href="tel:#">+91 090xxxxxx</a>
+                    </li>
+                    <li><a href="mailto:#">info@agrigear.org</a></li>
+                  </ul><a class="rd-navbar-basket rd-navbar-basket-mobile fl-bigmug-line-shopping202" href="cart-page.html"><span>2</span></a>
+                </div>
+                <div class="rd-navbar-aside-element">
+                  <!-- RD Navbar Search-->
+                  <div class="rd-navbar-search rd-navbar-search-2">
+                    <button class="rd-navbar-search-toggle rd-navbar-fixed-element-3" data-rd-navbar-toggle=".rd-navbar-search"><span></span></button>
+                    <form class="rd-search" action="search-results.html" data-search-live="rd-search-results-live" method="GET">
+                      <div class="form-wrap">
+                        <label class="form-label" for="rd-navbar-search-form-input">Search...</label>
+                        <input class="rd-navbar-search-form-input form-input" id="rd-navbar-search-form-input" type="text" name="s" autocomplete="off"/>
+                        <div class="rd-search-results-live" id="rd-search-results-live"></div>
+                        <button class="rd-search-form-submit fl-bigmug-line-search74" type="submit"></button>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- RD Navbar Basket-->
+         
+                 
+                </div>
+              </div>
+            </div>
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <div class="rd-navbar-nav-wrap">
+                  <!-- RD Navbar Nav-->
+                  <ul class="rd-navbar-nav">
+                    <li class="rd-nav-item "><a class="rd-nav-link" href="{% url 'landing_page' %}">Home</a>
+                    </li>
+                    <li class="rd-nav-item active"><a class="rd-nav-link" href="{% url 'grid_shop' %}">View Equipment</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'landing_page' %}#ourteam">team</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="#">Account</a>% 
+                      <!-- RD Navbar Megamenu-->
+                      <ul class="rd-menu rd-navbar-dropdown rd-navbar-open-left">
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="{% url 'login' %}">Log in</a></li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="{% url 'register' %}">sign up</a></li>
+                       
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <section class="breadcrumbs-custom">
+        <div class="breadcrumbs-custom-body context-dark">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-12 col-md-5">
+                <div class="breadcrumbs-custom-left"></div>
+                <h2 class="breadcrumbs-custom-title">View Equipment </h2>
+              </div>
+              <div class="col-md-7">
+                <div class="swiper-slide swiper-slide-1"><img src="/static/landing_page/images/slide-1.jpg" alt=""/></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="breadcrumbs-custom-footer">
+          <div class="container">
+            <ul class="breadcrumbs-custom-path">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="grid-shop.html">view Equipments</a></li>
+              <li class="active">Equipments</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Section Shop-->
+      <section class="section section-xxl bg-default">
+        <div class="container">
+          <h2 class="text-transform-capitalize wow fadeScale">Equipments</h2>
+          <div class="row row-lg row-30 row-lg-50">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <!-- Product-->
+              <article class="product wow fadeInRight">
+                <div class="product-body">
+                  <div class="product-figure"><img src="/static/landing_page/images/tractor.jpg" alt="" width="109" height="175"/>
+                  </div>
+                  <h5 class="product-title"><a href="{% url 'single_product' %}">Tractor</a></h5>
+                  <div class="product-price-wrap">
+                    
+                    <div class="product-price">₹23.00</div>
+                  </div>
+                </div>
+                <div class="product-button-wrap">
+                  <div class="product-button"><a class="button button-secondary button-zakaria fl-bigmug-line-search74" href="{% url 'single_product' %}"></a></div>
+                  
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <!-- Product-->
+              <article class="product wow fadeInRight">
+                <div class="product-body">
+                  <div class="product-figure"><img src="/static/landing_page/images/tractor.jpg" alt="" width="109" height="175"/>
+                  </div>
+                  <h5 class="product-title"><a href="{% url 'single_product' %}">Tractor</a></h5>
+                  <div class="product-price-wrap">
+                    
+                    <div class="product-price">₹23.00</div>
+                  </div>
+                </div>
+                <div class="product-button-wrap">
+                  <div class="product-button"><a class="button button-secondary button-zakaria fl-bigmug-line-search74" href="{% url 'single_product' %}"></a></div>
+                  
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <!-- Product-->
+              <article class="product wow fadeInRight">
+                <div class="product-body">
+                  <div class="product-figure"><img src="/static/landing_page/images/tractor.jpg" alt="" width="109" height="175"/>
+                  </div>
+                  <h5 class="product-title"><a href="{% url 'single_product' %}">Tractor</a></h5>
+                  <div class="product-price-wrap">
+                    
+                    <div class="product-price">₹23.00</div>
+                  </div>
+                </div>
+                <div class="product-button-wrap">
+                  <div class="product-button"><a class="button button-secondary button-zakaria fl-bigmug-line-search74" href="{% url 'single_product' %}"></a></div>
+                  
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <!-- Product-->
+              <article class="product wow fadeInRight">
+                <div class="product-body">
+                  <div class="product-figure"><img src="/static/landing_page/images/tractor.jpg" alt="" width="109" height="175"/>
+                  </div>
+                  <h5 class="product-title"><a href="{% url 'single_product' %}">Tractor</a></h5>
+                  <div class="product-price-wrap">
+                    
+                    <div class="product-price">₹23.00</div>
+                  </div>
+                </div>
+                <div class="product-button-wrap">
+                  <div class="product-button"><a class="button button-secondary button-zakaria fl-bigmug-line-search74" href="{% url 'single_product' %}"></a></div>
+                  
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <!-- Product-->
+              <article class="product wow fadeInRight">
+                <div class="product-body">
+                  <div class="product-figure"><img src="/static/landing_page/images/tractor.jpg" alt="" width="109" height="175"/>
+                  </div>
+                  <h5 class="product-title"><a href="{% url 'single_product' %}">Tractor</a></h5>
+                  <div class="product-price-wrap">
+                    
+                    <div class="product-price">₹23.00</div>
+                  </div>
+                </div>
+                <div class="product-button-wrap">
+                  <div class="product-button"><a class="button button-secondary button-zakaria fl-bigmug-line-search74" href="{% url 'single_product' %}"></a></div>
+                  
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <!-- Product-->
+              <article class="product wow fadeInRight">
+                <div class="product-body">
+                  <div class="product-figure"><img src="/static/landing_page/images/tractor.jpg" alt="" width="109" height="175"/>
+                  </div>
+                  <h5 class="product-title"><a href="{% url 'single_product' %}">Tractor</a></h5>
+                  <div class="product-price-wrap">
+                    
+                    <div class="product-price">₹23.00</div>
+                  </div>
+                </div>
+                <div class="product-button-wrap">
+                  <div class="product-button"><a class="button button-secondary button-zakaria fl-bigmug-line-search74" href="{% url 'single_product' %}"></a></div>
+                  
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <!-- Product-->
+              <article class="product wow fadeInRight">
+                <div class="product-body">
+                  <div class="product-figure"><img src="/static/landing_page/images/tractor.jpg" alt="" width="109" height="175"/>
+                  </div>
+                  <h5 class="product-title"><a href="{% url 'single_product' %}">Tractor</a></h5>
+                  <div class="product-price-wrap">
+                    
+                    <div class="product-price">₹23.00</div>
+                  </div>
+                </div>
+                <div class="product-button-wrap">
+                  <div class="product-button"><a class="button button-secondary button-zakaria fl-bigmug-line-search74" href="{% url 'single_product' %}"></a></div>
+                  
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <!-- Product-->
+              <article class="product wow fadeInRight">
+                <div class="product-body">
+                  <div class="product-figure"><img src="/static/landing_page/images/tractor.jpg" alt="" width="109" height="175"/>
+                  </div>
+                  <h5 class="product-title"><a href="{% url 'single_product' %}">Tractor</a></h5>
+                  <div class="product-price-wrap">
+                    
+                    <div class="product-price">₹23.00</div>
+                  </div>
+                </div>
+                <div class="product-button-wrap">
+                  <div class="product-button"><a class="button button-secondary button-zakaria fl-bigmug-line-search74" href="{% url 'single_product' %}"></a></div>
+                  
+                </div>
+              </article>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- Page Footer-->
+      <footer class="section footer-modern footer-modern-2">
+        <div class="footer-modern-body section-xl context-dark">
+          <div class="container">
+            <div class="row row-40 row-md-50 justify-content-xl-between">
+              
+              <div class="col-sm-6 col-md-7 col-lg-5 wow fadeInRight" data-wow-delay=".1s">
+                <h5 class="footer-modern-title">Quick Links</h5>
+                <ul class="footer-modern-list footer-modern-list-2 d-sm-inline-block d-md-block">
+                  <li><a href="our-team.html">Our Team</a></li>
+                  <li><a href="grid-shop.html">New Equipments</a></li>
+                  <li><a href="#">Top Sellers</a></li>
+                  <li><a href="about-us.html">About Us</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="contact-us.html">Contact Us</a></li>
+                  
+                </ul>
+              </div>
+              <div class="col-sm-6 col-md-5 col-lg-4 col-xl-3 wow fadeInRight" data-wow-delay=".2s">
+                <h5 class="footer-modern-title">Get in touch</h5>
+                <ul class="contacts-creative">
+                  <li>
+                    <div class="unit unit-spacing-sm flex-column flex-md-row">
+                      <div class="unit-left"><span class="icon mdi mdi-map-marker"></span></div>
+                      <div class="unit-body"><a href="#">523 Sylvan Ave, 5th Floor<br/>, Ahmedabad </a></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="unit unit-spacing-sm flex-column flex-md-row">
+                      <div class="unit-left"><span class="icon mdi mdi-phone"></span></div>
+                      <div class="unit-body"><a href="tel:#">+91 90xxxxxx</a></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="unit unit-spacing-sm flex-column flex-md-row">
+                      <div class="unit-left"><span class="icon mdi mdi-email-outline"></span></div>
+                      <div class="unit-body"><a href="mailto:#">info@agriGear.org</a></div>
+                    </div>
+                  </li>
+                </ul>
+             
+              
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-modern-panel text-center">
+          <div class="container">
+            <p class="rights"><span>&copy;&nbsp; </span><span class="copyright-year"></span><span>&nbsp;</span><span>Unit</span><span>.&nbsp;</span><span>All Rights Reserved Code-Titans</span><span>.&nbsp;</span><a href="privacy-policy.html">Privacy Policy</a></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Panel Thumbnail-->
+    <!-- Template panel-->
+    <div class="layout-panel">
+     
+      <div class="layout-panel-scroll">
+        <div class="layout-panel-content">
+          <div class="layout-panel-header"><a class="button button-primary button-icon button-icon-left" href="https://www.templatemonster.com/website-templates/unit-multipurpose-modern-bootstrap-4-website-template-85269.html" target="_blank"><span class="icon fl-bigmug-line-shopping202"></span>Buy template</a>
+            <div class="layout-panel-element"><a href="../landing/index.html"><img src="../static/landing_page/images/logo-default-314x100.png" width="157" height="50" alt=""></a></div>
+          </div>
+          <!-- Isotope Content-->
+          <div class="layout-panel-body"><a class="thumbnail-small" href="../unit-farm/index.html">
+                  <div class="thumbnail-small-image"><img src="/static/landing_page/images/layout-panel/farm.jpg" alt="" width="380" height="280"></div>
+                  <div class="thumbnail-small-caption">
+                    <p class="thumbnail-small-header">Farm</p>
+                  </div></a><a class="thumbnail-small" href="../unit-bike-repair/index.html">
+                  <div class="thumbnail-small-image"><img src="/static/landing_page/images/layout-panel/bike-repair.jpg" alt="" width="380" height="280"></div>
+                  <div class="thumbnail-small-caption">
+                    <p class="thumbnail-small-header">Bike Repair</p>
+                  </div></a><a class="thumbnail-small" href="../unit-car-repair/index.html">
+                  <div class="thumbnail-small-image"><img src="/static/landing_page/images/layout-panel/car-repair.jpg" alt="" width="380" height="280"></div>
+                  <div class="thumbnail-small-caption">
+                    <p class="thumbnail-small-header">Car Repair</p>
+                  </div></a><a class="thumbnail-small" href="../unit-catholic-church/index.html">
+                  <div class="thumbnail-small-image"><img src="/static/landing_page/images/layout-panel/catholic-church.jpg" alt="" width="380" height="280"></div>
+                  <div class="thumbnail-small-caption">
+                    <p class="thumbnail-small-header">Catholic Church</p>
+                  </div></a><a class="thumbnail-small" href="../unit-cosmetics-store/index.html">
+                  <div class="thumbnail-small-image"><img src="/static/landing_page/images/layout-panel/cosmetics-store.jpg" alt="" width="380" height="280"></div>
+                  <div class="thumbnail-small-caption">
+                    <p class="thumbnail-small-header">Cosmetics Store</p>
+                  </div></a><a class="thumbnail-small" href="../unit-diving/index.html">
+                  <div class="thumbnail-small-image"><img src="/static/landing_page/images/layout-panel/diving.jpg" alt="" width="380" height="280"></div>
+                  <div class="thumbnail-small-caption">
+                    <p class="thumbnail-small-header">Diving</p>
+                  </div></a><a class="thumbnail-small" href="../unit-event-planner/index.html">
+                  <div class="thumbnail-small-image"><img src="images/layout-panel/event-planner.jpg" alt="" width="380" height="280"></div>
+                  <div class="thumbnail-small-caption">
+                    <p class="thumbnail-small-header">Event Planner</p>
+                  </div></a><a class="thumbnail-small" href="../unit-web-development/index.html">
+                  <div class="thumbnail-small-image"><img src="/static/landing_page/images/layout-panel/web-development.jpg" alt="" width="380" height="280"></div>
+                  <div class="thumbnail-small-caption">
+                    <p class="thumbnail-small-header">Web Development</p>
+                  </div></a><a class="thumbnail-small" href="../unit-repair-tractor/index.html">
+                  <div class="thumbnail-small-image"><img src="/static/landing_page/images/layout-panel/repair-tractor.jpg" alt="" width="380" height="280"></div>
+                  <div class="thumbnail-small-caption">
+                    <p class="thumbnail-small-header">Repair Tractor</p>
+                  </div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="/static/landing_page/js/core.min.js"></script>
+    <script src="/static/landing_page/js/script.js"></script>
+  <!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P9FT69" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P9FT69');</script><!-- End Google Tag Manager --></body>
+</html>

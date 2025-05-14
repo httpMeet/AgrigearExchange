@@ -1,0 +1,6 @@
+
+{{ user }} Dashboard
+<form action="{% url 'logout' %}">
+    {% csrf_token %}
+    <button type="submit">submit</button>
+</form>
