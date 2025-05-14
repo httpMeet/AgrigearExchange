@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-kq)52(g8p=tgwau0yt_c(-j@_np#a8b*e2$%l2a-#_a0&m$=jl
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True    #For Local
-DEBUG = False  #For Server
+DEBUG = True  #For Server
 
 # ALLOWED_HOSTS = []  #For Local
 ALLOWED_HOSTS = ['*'] #For Server
@@ -130,8 +130,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 STATIC_URL = '/static/'
-# STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),) #For Local
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')                #For Server Upload
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),) #For Local
+#STATIC_ROOT = os.path.join(BASE_DIR, 'static')                #For Server Upload
 
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
